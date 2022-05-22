@@ -3,7 +3,7 @@
 This project provides docker image with rust and trunk install. It can be used to build yew application for nginx.
 
 ```
-FROM osomahe/rust-trunk as builder
+FROM osomahe/rust-trunk:22.05 as builder
 
 RUN mkdir /web
 ADD Cargo.toml index.html Trunk.toml /web/
